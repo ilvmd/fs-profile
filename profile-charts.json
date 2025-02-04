@@ -182,7 +182,6 @@
       "id": 3,
       "title": "Online Learning",
       "members": [
-        ,
         "Nada Mostafa",
         "Omina Mohammed",
         "Fares Mohammed",
@@ -250,7 +249,7 @@
       "id": 4,
       "title": "ERP System Dashboard",
       "level": "In progress",
-      "members": ["Anmar ElMasry", ],
+      "members": ["Anmar ElMasry"],
       "color": "bg-soft-primary text-primary",
       "image": "./assets/svg/erp.png",
       "icon": "./assets/svg/laravel.ico",
