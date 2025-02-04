@@ -35,6 +35,7 @@
       transition: unset !important;
       font-family: 'Cairo';
     }
+
     .w-max {
       width: max-content;
     }
@@ -330,16 +331,15 @@
             </h1>
 
             <!-- List -->
-            <ul class="list-inline list-px-2">
-              <li class="list-inline-item">
-                <i class="bi bi-person-check me-1"></i>
-                <span x-text="auther_job"></span>
-              </li>
+            <ul class="list-inline list-px-2 mt-3">
+              <template x-for="jobTitle in auther_jobs" x-text="jobTitle">
+                <li class="" x-text="jobTitle"></li><br>
+              </template>
 
-              <li class="list-inline-item">
+              <!-- <li class="list-inline-item">
                 <i class="bi-geo-alt me-1"></i>
                 <a href="#" x-text="auther_location"></a>
-              </li>
+              </li> -->
 
             </ul>
             <!-- End List -->
@@ -449,8 +449,16 @@
 
                       <ul class="list-unstyled list-py-2 text-dark mb-0">
                         <li class="pb-0"><span class="card-subtitle">Bio</span></li>
-                        <li><i class="bi bi-info-circle-fill dropdown-item-icon"></i> <span x-text="auther_bio"></span>
+                        <li>
+                          <i class="bi bi-info-circle-fill dropdown-item-icon"></i>
+                          <span x-text="auther_bio"></span>
                         </li>
+
+                        <li class="list-inline-item">
+                          <i class="bi-geo-alt me-1"></i>
+                          <a href="#" x-text="auther_location"></a>
+                        </li>
+
                         <li class="pt-4 pb-0"><span class="card-subtitle">skills</span></li>
                         <li>
                           <template x-for="s in auther_tags">
@@ -1170,11 +1178,12 @@
     }
 
     const my_profile_data = {
-      next: "Profile",
+      next: "Overview",
       auther_name: null,
       auther_phone: null,
       auther_email: null,
       auther_job: null,
+      auther_jobs: null,
       auther_bio: null,
       auther_tags: null,
       auther_location: null,
@@ -1215,6 +1224,7 @@
           this.auther_phone = res.auther_phone
           this.auther_email = res.auther_email
           this.auther_job = res.auther_job
+          this.auther_jobs = res.auther_jobs
           this.auther_bio = res.auther_bio
           this.auther_tags = res.auther_tags
           this.auther_location = res.auther_location
