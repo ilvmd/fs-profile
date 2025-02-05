@@ -207,51 +207,51 @@
       "images": [
         {
           "title": "attachs page",
-          "src": "assets/projects/online-learning/attachs.jpg"
+          "src": "/fs-profile/assets/projects/online-learning/attachs.jpg"
         },
         {
           "title": "chat page",
-          "src": "assets/projects/online-learning/chat.jpg"
+          "src": "/fs-profile/assets/projects/online-learning/chat.jpg"
         },
         {
           "title": "create-cs page",
-          "src": "assets/projects/online-learning/create-cs.jpg"
+          "src": "/fs-profile/assets/projects/online-learning/create-cs.jpg"
         },
         {
           "title": "create-post page",
-          "src": "assets/projects/online-learning/create-post.jpg"
+          "src": "/fs-profile/assets/projects/online-learning/create-post.jpg"
         },
         {
           "title": "cs-settings page",
-          "src": "assets/projects/online-learning/cs-settings.jpg"
+          "src": "/fs-profile/assets/projects/online-learning/cs-settings.jpg"
         },
         {
           "title": "join-cs page",
-          "src": "assets/projects/online-learning/join-cs.jpg"
+          "src": "/fs-profile/assets/projects/online-learning/join-cs.jpg"
         },
         {
           "title": "posts page",
-          "src": "assets/projects/online-learning/posts.jpg"
+          "src": "/fs-profile/assets/projects/online-learning/posts.jpg"
         },
         {
           "title": "profile page",
-          "src": "assets/projects/online-learning/profile.jpg"
+          "src": "/fs-profile/assets/projects/online-learning/profile.jpg"
         },
         {
           "title": "profile-settings page",
-          "src": "assets/projects/online-learning/profile-settings.jpg"
+          "src": "/fs-profile/assets/projects/online-learning/profile-settings.jpg"
         },
         {
           "title": "student page",
-          "src": "assets/projects/online-learning/student.jpg"
+          "src": "/fs-profile/assets/projects/online-learning/student.jpg"
         },
         {
           "title": "up-attachs page",
-          "src": "assets/projects/online-learning/up-attachs.jpg"
+          "src": "/fs-profile/assets/projects/online-learning/up-attachs.jpg"
         },
         {
           "title": "zoo page",
-          "src": "assets/projects/online-learning/zoom.jpg"
+          "src": "/fs-profile/assets/projects/online-learning/zoom.jpg"
         }
       ]
     },
@@ -269,51 +269,51 @@
       "images": [
         {
           "title": "Home page",
-          "src": "assets/projects/erp/home.jpg"
+          "src": "/fs-profile/assets/projects/erp/home.jpg"
         },
         {
           "title": "Add Employees Modal",
-          "src": "assets/projects/erp/add-emps.jpg"
+          "src": "/fs-profile/assets/projects/erp/add-emps.jpg"
         },
         {
           "title": "Edit Employees Modal",
-          "src": "assets/projects/erp/edit-emp.jpg"
+          "src": "/fs-profile/assets/projects/erp/edit-emp.jpg"
         },
         {
           "title": "Add Stores page",
-          "src": "assets/projects/erp/add-st.jpg"
+          "src": "/fs-profile/assets/projects/erp/add-st.jpg"
         },
         {
           "title": "Add Stores transition page",
-          "src": "assets/projects/erp/add-trans-st.jpg"
+          "src": "/fs-profile/assets/projects/erp/add-trans-st.jpg"
         },
         {
           "title": "Admins page",
-          "src": "assets/projects/erp/admins.jpg"
+          "src": "/fs-profile/assets/projects/erp/admins.jpg"
         },
         {
           "title": "Customers page",
-          "src": "assets/projects/erp/cus.jpg"
+          "src": "/fs-profile/assets/projects/erp/cus.jpg"
         },
         {
           "title": "Employees page",
-          "src": "assets/projects/erp/emps.jpg"
+          "src": "/fs-profile/assets/projects/erp/emps.jpg"
         },
         {
           "title": "Groups page",
-          "src": "assets/projects/erp/groups.jpg"
+          "src": "/fs-profile/assets/projects/erp/groups.jpg"
         },
         {
           "title": "Invoices page",
-          "src": "assets/projects/erp/inv.jpg"
+          "src": "/fs-profile/assets/projects/erp/inv.jpg"
         },
         {
           "title": "Offers page",
-          "src": "assets/projects/erp/offers.jpg"
+          "src": "/fs-profile/assets/projects/erp/offers.jpg"
         },
         {
           "title": "Stores page",
-          "src": "assets/projects/erp/stores.jpg"
+          "src": "/fs-profile/assets/projects/erp/stores.jpg"
         }
       ]
     },
@@ -331,7 +331,7 @@
       "images": [
         {
           "title": "Video Call page",
-          "src": "assets/projects/zoom/zoom.jpg"
+          "src": "/fs-profile/assets/projects/zoom/zoom.jpg"
         }
       ]
     },
