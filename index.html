@@ -282,6 +282,10 @@
     .certificate-container .items p:last-of-type {
       margin-bottom: 15px;
     }
+
+    main {
+      background-color: white !important;
+    }
   </style>
 </head>
 
@@ -299,11 +303,13 @@
 
 
 
-  <main id="content" role="main" class="">
+  <main id="content" role="main" class="container container-fluid">
     <!-- Content -->
-    <div class="content container-fluid">
-      <div class="row justify-content-lg-center">
-        <div class="col-lg-10">
+    <div class="content col-10 mx-auto">
+      <!-- <div class="row justify-content-lg-center">
+        <div class="col-lg-11"> -->
+      <div class="mt-4">
+        <div class="mx-4">
           <!-- Profile Cover -->
           <div class="profile-cover">
             <div class="profile-cover-img-wrapper">
@@ -618,8 +624,8 @@
             <!--  -->
             <!--  -->
             <div class="tab-pane fade" id="nav-two-eg2" role="tabpanel" aria-labelledby="nav-two-eg2-tab">
-              <div class="card text-left">
-                <div class="card-body">
+              <div class="card overflow-hidden text-left">
+                <div class="card-body p-0">
                   <!-- Table -->
                   <div class="table-responsive position-relative">
                     <table
