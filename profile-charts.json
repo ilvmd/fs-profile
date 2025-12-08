@@ -1,15 +1,18 @@
 {
-  "auther_name": "Fahd Mohammed",
-  "auther_phone": "+20 1011935168",
-  "auther_email": "fahdmohammed978@gmail.com",
-  "auther_job": "PHP Laravel | NodeJS ExpressJs | developer",
-  "auther_jobs": [
+  "cover": "/assets/img/cover.jpg",
+  "image": "/assets/img/profile.jpg",
+  "name": "Fahd Mohammed",
+  "phone": "+201011935168",
+  "email": "fahdmohammed978@gmail.com",
+  "job": "Microsoft Dynamic365 CRM Developer | Microsoft Power Platform Developer | Microsoft Certified @about the solution | PHP (Laravel) | NodeJs (ExpressJs) developer",
+  "company": "Advancya",
+  "jobs": [
     "CRM Dynamic365 developer @ AboutTheSolution",
     "PHP Laravel developer",
     "NodeJS ExpressJs developer"
   ],
-  "auther_bio": "Engineer and web developer, graduate of the Faculty of Science, Computer Department Work on programming and developing the design of websites and web applications",
-  "auther_tags": [
+  "bio": "Engineer and web developer, graduate of the Faculty of Science, Computer Department Work on programming and developing the design of websites and web applications",
+  "tags": [
     "CRM Dynamic365",
     "Workflows & Plug-ins",
     "Power Apps",
@@ -31,22 +34,30 @@
     "HTML5",
     "CSS3"
   ],
-  "auther_location": "Belbies - Sharkia, Egypt",
+  "location": "Belbies - Sharkia, Egypt",
   "degrees": [
-    "Microsoft Certified (PL-200): Power Platform Functional Consultant Associate",
-    "Bachelor of Computer Science, Zagazig University"
+    {
+      "title": "Microsoft Certified (PL-200): Power Platform Functional Consultant Associate",
+      "year": "2024",
+      "image": "/assets/img/microsoft_logo.jpg"
+    },
+    {
+      "title": "Bachelor of Computer Science, Zagazig University",
+      "year": "2021",
+      "image": "/assets/img/un.jpg"
+    }
   ],
   "skills": [
     {
       "name": "PHP Laravel Framework",
-      "level": "80%",
+      "level": "80",
       "source": [],
       "icon": "fab fa-laravel",
       "color": "#ff2d20"
     },
     {
       "name": "PHP Filament",
-      "level": "75%",
+      "level": "75",
       "source": [],
       "img": "",
       "color": "#fb70a9",
@@ -54,7 +65,7 @@
     },
     {
       "name": "PHP Laravel (Livewire)",
-      "level": "90%",
+      "level": "90",
       "source": [],
       "img": "",
       "color": "#fb70a9",
@@ -62,49 +73,51 @@
     },
     {
       "name": "MySqlDB",
-      "level": "70%",
+      "level": "70",
       "source": [],
       "img": "",
       "style": "width: 30px; height: max-content; margin: 0 10px 0 0;"
     },
     {
       "name": "JavaScript",
-      "level": "90%",
-      "source": ["Osama ElZero"],
+      "level": "90",
+      "source": [
+        "Osama ElZero"
+      ],
       "icon": "fab fa-js",
       "color": "#ebcb2f"
     },
     {
       "name": "NodeJs",
-      "level": "75%",
+      "level": "75",
       "source": [],
       "icon": "fab fa-node-js",
       "color": "#119908"
     },
     {
       "name": "ExpressJS",
-      "level": "75%",
+      "level": "75",
       "source": [],
       "icon": "fab fa-node-js",
       "color": "#119908"
     },
     {
       "name": "jQueryJs",
-      "level": "90%",
+      "level": "90",
       "source": [],
       "icon": "fab fa-react",
       "color": "#9feaf9"
     },
     {
       "name": "AngularJS",
-      "level": "75%",
+      "level": "75",
       "source": [],
       "icon": "fab fa-react",
       "color": "#9feaf9"
     },
     {
       "name": "AlpineJs",
-      "level": "95%",
+      "level": "95",
       "source": [],
       "img": "./assets/svg/alpinejs.png",
       "color": "#77c1d2",
@@ -112,7 +125,7 @@
     },
     {
       "name": "MongoDB",
-      "level": "85%",
+      "level": "85",
       "source": [],
       "img": "",
       "color": "#00ee64",
@@ -120,7 +133,7 @@
     },
     {
       "name": "C#",
-      "level": "80%",
+      "level": "80",
       "source": [],
       "img": "",
       "color": "#00ee64",
@@ -128,7 +141,7 @@
     },
     {
       "name": "OOP",
-      "level": "70%",
+      "level": "70",
       "source": [],
       "img": "",
       "color": "#00ee64",
@@ -136,7 +149,7 @@
     },
     {
       "name": ".Net#",
-      "level": "70%",
+      "level": "70",
       "source": [],
       "img": "",
       "color": "#00ee64",
@@ -144,7 +157,7 @@
     },
     {
       "name": "APIs (AJAX - RESTFul)",
-      "level": "100%",
+      "level": "100",
       "source": [],
       "img": "",
       "color": "#609ec6",
@@ -152,7 +165,7 @@
     },
     {
       "name": "JSON data",
-      "level": "100%",
+      "level": "100",
       "source": [],
       "img": "",
       "color": "#00b9e0",
@@ -162,10 +175,11 @@
   "projects": [
     {
       "id": 1,
+      "percent": "100",
       "title": "Avento pharmaceutical",
       "level": "Completed",
-      "icon": "./assets/img/avento.ico",
-      "image": "./assets/img/avento.ico",
+      "icon": "/assets/img/avento.ico",
+      "image": "/assets/img/avento.ico",
       "color": "bg-soft-success text-success",
       "link": "https://aventopharmaceutical.com",
       "members": [],
@@ -176,10 +190,11 @@
     },
     {
       "id": 2,
+      "percent": "100",
       "title": "Yusr",
       "level": "Completed",
-      "icon": "./assets/img/yusr.png",
-      "image": "./assets/img/yusr.png",
+      "icon": "/assets/img/yusr.png",
+      "image": "/assets/img/yusr.png",
       "color": "bg-soft-success text-success",
       "link": "https://yusrapp.com",
       "members": [],
@@ -190,6 +205,7 @@
     },
     {
       "id": 3,
+      "percent": "80",
       "title": "Online Learning",
       "members": [
         "Nada Mostafa",
@@ -197,72 +213,73 @@
         "Fares Mohammed",
         "Ibrahim Hassan"
       ],
-      "icon": "./assets/svg/nodejs 1.png",
-      "level": "Completed",
+      "icon": "/assets/svg/nodejs 1.png",
+      "level": "Pending",
       "color": "bg-soft-success text-success",
-      "image": "./assets/svg/online.png",
+      "image": "/assets/svg/online.png",
       "description": "Web Application like Google Classroom",
       "client": "My University",
       "dir": "ltr",
       "images": [
         {
           "title": "attachs page",
-          "src": "/fs-profile/assets/projects/online-learning/attachs.jpg"
+          "src": "/assets/projects/online-learning/attachs.jpg"
         },
         {
           "title": "chat page",
-          "src": "/fs-profile/assets/projects/online-learning/chat.jpg"
+          "src": "/assets/projects/online-learning/chat.jpg"
         },
         {
           "title": "create-cs page",
-          "src": "/fs-profile/assets/projects/online-learning/create-cs.jpg"
+          "src": "/assets/projects/online-learning/create-cs.jpg"
         },
         {
           "title": "create-post page",
-          "src": "/fs-profile/assets/projects/online-learning/create-post.jpg"
+          "src": "/assets/projects/online-learning/create-post.jpg"
         },
         {
           "title": "cs-settings page",
-          "src": "/fs-profile/assets/projects/online-learning/cs-settings.jpg"
+          "src": "/assets/projects/online-learning/cs-settings.jpg"
         },
         {
           "title": "join-cs page",
-          "src": "/fs-profile/assets/projects/online-learning/join-cs.jpg"
+          "src": "/assets/projects/online-learning/join-cs.jpg"
         },
         {
           "title": "posts page",
-          "src": "/fs-profile/assets/projects/online-learning/posts.jpg"
+          "src": "/assets/projects/online-learning/posts.jpg"
         },
         {
           "title": "profile page",
-          "src": "/fs-profile/assets/projects/online-learning/profile.jpg"
+          "src": "/assets/projects/online-learning/profile.jpg"
         },
         {
           "title": "profile-settings page",
-          "src": "/fs-profile/assets/projects/online-learning/profile-settings.jpg"
+          "src": "/assets/projects/online-learning/profile-settings.jpg"
         },
         {
           "title": "student page",
-          "src": "/fs-profile/assets/projects/online-learning/student.jpg"
+          "src": "/assets/projects/online-learning/student.jpg"
         },
         {
           "title": "up-attachs page",
-          "src": "/fs-profile/assets/projects/online-learning/up-attachs.jpg"
+          "src": "/assets/projects/online-learning/up-attachs.jpg"
         },
         {
           "title": "zoo page",
-          "src": "/fs-profile/assets/projects/online-learning/zoom.jpg"
+          "src": "/assets/projects/online-learning/zoom.jpg"
         }
       ]
     },
     {
       "id": 4,
+      "percent": "40",
       "title": "ERP System Dashboard",
-      "level": "Completed",
+      "level": "Pending",
       "members": [],
       "color": "bg-soft-primary text-primary",
-      "image": "./assets/svg/erp.png",
-      "icon": "./assets/svg/laravel.ico",
+      "image": "/assets/svg/erp.png",
+      "icon": "/assets/svg/laravel.ico",
       "description": "It is a system that helps automate business processes across finance, manufacturing, retail, sourcing, human resources and operations. It assists in the implementation of enterprise planning processes, which assist in the implementation of various tasks such as managing warehouses and its own movements. It also has the ability to manage the personnel system with all its operations, etc.",
       "client": "el nour",
       "dir": "ltr",
@@ -319,12 +336,13 @@
     },
     {
       "id": 5,
+      "percent": "30",
       "title": "Zoom App",
-      "level": "Completed",
+      "level": "Pending",
       "color": "bg-soft-success text-success",
       "members": [],
-      "icon": "./assets/svg/nodejs 1.png",
-      "image": "./assets/svg/zoom.jpg",
+      "icon": "/assets/svg/nodejs 1.png",
+      "image": "/assets/svg/zoom.jpg",
       "description": "Web Application like Zoom Application",
       "client": "Zagazig university",
       "dir": "ltr",
@@ -337,12 +355,13 @@
     },
     {
       "id": 6,
+      "percent": "30",
       "title": "Chat App",
       "color": "bg-soft-success text-success",
-      "level": "Completed",
+      "level": "Pending",
       "members": [],
-      "icon": "./assets/svg/nodejs 1.png",
-      "image": "./assets/svg/chat.png",
+      "icon": "/assets/svg/nodejs 1.png",
+      "image": "/assets/svg/chat.png",
       "description": "Web Application like Whatsapp & Messenger Application",
       "client": "Zagazig university",
       "dir": "ltr",
@@ -350,12 +369,13 @@
     },
     {
       "id": 7,
+      "percent": "60",
       "title": "Hospital Dashboard",
       "color": "bg-soft-primary text-primary",
-      "level": "Completed",
-      "icon": "./assets/svg/laravel.ico",
+      "level": "Pending",
+      "icon": "/assets/svg/laravel.ico",
       "members": [],
-      "image": "./assets/svg/parmacies.png",
+      "image": "/assets/svg/parmacies.png",
       "description": "",
       "client": "Zagazig university",
       "dir": "ltr",
@@ -473,8 +493,20 @@
     }
   ],
   "works": [
-    "CRM D365 developer at ATS (About the solution)",
-    "FreeLacer at Khamsat and mostaql, Hasoub"
+    {
+      "image": "/assets/img/adv.jpg",
+      "title": "Mid-Level CRM D365 developer at Advancya",
+      "startData": "Oct 2025",
+      "endDate": "Current",
+      "locationType": "Remote"
+    },
+    {
+      "image": "/assets/img/about_the_solution_logo.jpg",
+      "title": "CRM D365 developer at ATS (About the solution)",
+      "startData": "May 2023",
+      "endDate": "Oct 2025",
+      "locationType": "Remote"
+    }
   ],
   "links": [
     {

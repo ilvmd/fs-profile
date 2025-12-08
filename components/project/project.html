@@ -1,0 +1,175 @@
+<!-- Page Header -->
+<div class="page-header">
+    <div class="d-flex mb-3">
+        <!-- Avatar -->
+        <div class="flex-shrink-0">
+            <div class="avatar avatar-lg avatar-4x3">
+                <img class="avatar-img" src="{{project.image}}" alt="Image Description">
+            </div>
+        </div>
+        <!-- End Avatar -->
+
+        <div class="flex-grow-1 ms-4">
+            <div class="row">
+                <div class="col-lg mb-3 mb-lg-0">
+                    <h1 class="page-header-title">{{project.title}}</h1>
+
+                    <div class="row align-items-center">
+                        <div class="col-auto">
+                            <span>Client:</span>
+                            <a href="#">{{project.client}}</a>
+                        </div>
+                        <!-- End Col -->
+                    </div>
+                    <!-- End Row -->
+                </div>
+                <!-- End Col -->
+
+                <div class="col-lg-auto">
+                    <span class="text-cap small">Team members:</span>
+
+                    <div class="d-flex">
+                        <!-- Avatar Group -->
+                        <div class="avatar-group avatar-circle me-3">
+                            <span ng-repeat="member in project.members track by $index" class="avatar avatar-soft-dark"
+                                data-bs-toggle="tooltip" data-bs-placement="top" title="Antony Taylor">
+                                <span class="avatar-initials">{{member[0]}}</span>
+                            </span>
+                            <!-- <a class="avatar avatar-light avatar-circle" href="javascript:;" data-bs-toggle="modal" data-bs-target="#shareWithPeopleModal">
+                      <span class="avatar-initials">+2</span>
+                    </a> -->
+                        </div>
+                        <!-- End Avatar Group -->
+                    </div>
+                </div>
+                <!-- End Col -->
+            </div>
+            <!-- End Row -->
+        </div>
+    </div>
+    <!-- End Media -->
+</div>
+<!-- End Page Header -->
+
+<div class="row">
+    <div class="col-sm-6 col-xl-4 mb-3 mb-xl-6">
+        <!-- Card -->
+        <div class="card card-sm h-100">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col">
+                        <!-- Media -->
+                        <div class="d-flex">
+                            <div class="flex-shrink-0">
+                                <i class="bi-receipt nav-icon"></i>
+                            </div>
+
+                            <div class="flex-grow-1 ms-3">
+                                <h4 class="mb-1">Images</h4>
+                                <span class="d-block">{{project.images.length}}</span>
+                            </div>
+                        </div>
+                        <!-- End Media -->
+                    </div>
+                    <!-- End Col -->
+                </div>
+                <!-- End Row -->
+            </div>
+        </div>
+        <!-- End Card -->
+    </div>
+
+    <div class="col-sm-6 col-xl-4 mb-3 mb-xl-6">
+        <!-- Card -->
+        <div class="card card-sm h-100">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col">
+                        <!-- Media -->
+                        <div class="d-flex">
+                            <div class="flex-shrink-0">
+                                <i class="bi-person nav-icon"></i>
+                            </div>
+
+                            <div class="flex-grow-1 ms-3">
+                                <h4 class="mb-1">Members</h4>
+                                <span class="fs-5 text-success">{{project.images.length}}</span>
+                            </div>
+                        </div>
+                        <!-- End Media -->
+                    </div>
+                    <!-- End Col -->
+                </div>
+                <!-- End Row -->
+            </div>
+        </div>
+        <!-- End Card -->
+    </div>
+
+    <div class="col-sm-6 col-xl-4 mb-3 mb-xl-6">
+        <!-- Card -->
+        <div class="card card-sm h-100">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col">
+                        <!-- Media -->
+                        <div class="d-flex">
+                            <div class="flex-shrink-0">
+                                <i class="bi-check2-circle nav-icon"></i>
+                            </div>
+
+                            <div class="flex-grow-1 ms-3">
+                                <h4 class="mb-1">Percent</h4>
+                                <span class="d-block">{{project.percent}}%</span>
+                            </div>
+                        </div>
+                        <!-- End Media -->
+                    </div>
+                    <!-- End Col -->
+                </div>
+                <!-- End Row -->
+            </div>
+        </div>
+        <!-- End Card -->
+    </div>
+</div>
+<!-- End Row -->
+
+
+<div class="card mb-4">
+    <div class="card-header card-header-content-between">
+        <h4 class="card-header-title">Description</h4>
+    </div>
+    <div class="card-body">
+        <p class="card-text">{{project.description}}</p>
+        <div class="d-flex align-items-center">
+            <span class="legend-indicator" ng-class="{
+                'bg-warning': project.level == 'Pending',
+                'bg-success': project.level == 'Completed'
+            }"></span>
+            <p class="card-text">{{project.level}}</p>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Card -->
+<div class="card">
+    <!-- Header -->
+    <div class="card-header card-header-content-between">
+        <h4 class="card-header-title">Images</h4>
+    </div>
+    <!-- End Header -->
+
+    <!-- Body -->
+    <div class="card-body">
+        <div class="row">
+            <div ng-repeat="image in project.images track by $index" class="col-lg-4 mb-lg-5 mb-3">
+                <img src="{{image.src}}" class="img-fluid rounded-top" alt="" />
+            </div>
+        </div>
+    </div>
+    <!-- End Body -->
+</div>
+<!-- End Card -->
