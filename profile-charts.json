@@ -39,12 +39,14 @@
     {
       "title": "Microsoft Certified (PL-200): Power Platform Functional Consultant Associate",
       "year": "2024",
-      "image": "/fs-profile/assets/img/microsoft_logo.jpg"
+      "image": "/fs-profile/assets/img/microsoft_logo.jpg",
+      "link": "https://learn.microsoft.com/api/credentials/share/en-us/FahdMohamed-2252/A6B3273FBF307A84?sharingId=2A4A15890D1A4D99"
     },
     {
       "title": "Bachelor of Computer Science, Zagazig University",
       "year": "2021",
-      "image": "/fs-profile/assets/img/un.jpg"
+      "image": "/fs-profile/assets/img/un.jpg",
+      "link": ""
     }
   ],
   "skills": [
