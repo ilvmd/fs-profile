@@ -1,0 +1,738 @@
+{
+  "modules": [
+    {
+      "categoryid": 1,
+      "category": "Dynamics 365 Customer Service",
+      "items": [
+        {
+          "title": "Case Management",
+          "features": [
+            {
+              "title": "Email-to-Case",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Queues & Routing",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "SLA & KPIs",
+              "status": "Complated",
+              "color": "success"
+            }
+          ]
+        },
+        {
+          "title": "Knowledge Management",
+          "features": [
+            {
+              "title": "Knowledge Articles",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Article Versioning",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Translations",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Relevance Search",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Article Linking",
+              "status": "In progress",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "title": "Service Scheduling",
+          "features": [
+            {
+              "title": "Resources",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Rotations",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Calendar Slots",
+              "status": "In progress",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "title": "Customer Service Hub",
+          "features": [
+            {
+              "title": "Dashboards",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Agent Productivity Tools",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Macros",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Session Templates",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Custom Controls",
+              "status": "In progress",
+              "color": "primary"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "categoryid": 2,
+      "category": "Dynamics 365 Field Service",
+      "items": [
+        {
+          "title": "Work Orders",
+          "features": [
+            {
+              "title": "Work Order Creation",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Work Order Templates",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Service Tasks",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Products, Services, Tools",
+              "status": "In progress",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "title": "Resource Scheduling",
+          "features": [
+            {
+              "title": "Scheduling Board",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Booking Rules",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Resource Availability",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "RRS Optimization",
+              "status": "In progress",
+              "color": "primary"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "features": [
+    {
+      "id": 1,
+      "category": "Core CRM Platform",
+      "description": "Includes the foundational Dataverse capabilities such as data modeling, forms, views, dashboards, business rules, search, notes, activities, and all essential components used to build and customize Dynamics 365 applications.",
+      "items": [
+        {
+          "title": "Data Management",
+          "features": [
+            {
+              "title": "Standard & Custom Tables",
+              "status": "Complated",
+              "color": "success"
+            },
+            {
+              "title": "Fields & Attributes",
+              "status": "Complated",
+              "color": "success"
+            },
+            {
+              "title": "Relationships (1:N, N:1, N:N)",
+              "status": "Complated",
+              "color": "success"
+            },
+            {
+              "title": "Virtual Tables (OData, SQL, Custom)",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Alternative Keys",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Duplicate Detection",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Bulk Import & Export",
+              "status": "Complated",
+              "color": "success"
+            },
+            {
+              "title": "Data Mapping",
+              "status": "Complated",
+              "color": "success"
+            },
+            {
+              "title": "Dataflows",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Auditing & Field History",
+              "status": "Complated",
+              "color": "success"
+            },
+            {
+              "title": "Change Tracking",
+              "status": "Complated",
+              "color": "success"
+            }
+          ]
+        },
+        {
+          "title": "User Interface",
+          "features": [
+            {
+              "title": "Forms (Main, Quick Create, Quick View)",
+              "status": "Complated",
+              "color": "success"
+            },
+            {
+              "title": "Views (System, Personal, Public)",
+              "status": "Complated",
+              "color": "success"
+            },
+            {
+              "title": "Charts",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Dashboards",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Business Rules",
+              "status": "Complated",
+              "color": "success"
+            },
+            {
+              "title": "Ribbon/Command Bar Customization",
+              "status": "Complated",
+              "color": "success"
+            },
+            {
+              "title": "Sitemap Designer",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "App Designer",
+              "status": "Complated",
+              "color": "success"
+            },
+            {
+              "title": "Advanced Find",
+              "status": "Complated",
+              "color": "success"
+            },
+            {
+              "title": "Relevance Search",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Editable Grids",
+              "status": "Complated",
+              "color": "success"
+            },
+            {
+              "title": "PCF Controls",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Subgrids",
+              "status": "Complated",
+              "color": "success"
+            },
+            {
+              "title": "Custom Controls Framework",
+              "status": "In progress",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "title": "Activity Management",
+          "features": [
+            {
+              "title": "Emails, Tasks, Phone Calls, Appointments",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Activity Parties",
+              "status": "Complated",
+              "color": "success"
+            },
+            {
+              "title": "Recurring Appointments",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Email Tracking",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Email Templates",
+              "status": "Complated",
+              "color": "success"
+            },
+            {
+              "title": "Mailbox & Server-Side Sync",
+              "status": "In progress",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "title": "Notes & Files",
+          "features": [
+            {
+              "title": "Notes Timeline",
+              "status": "Complated",
+              "color": "success"
+            },
+            {
+              "title": "Rich Text Notes",
+              "status": "Complated",
+              "color": "success"
+            },
+            {
+              "title": "File & Image Data Types",
+              "status": "Complated",
+              "color": "success"
+            },
+            {
+              "title": "SharePoint Integration",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "OneDrive Integration",
+              "status": "In progress",
+              "color": "primary"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "category": "Power Platform / Dataverse",
+      "description": "Covers automation, extensibility, and app development using workflows, Power Automate, plugins, PCF components, canvas apps, model-driven apps, and low-code customization across the platform.",
+      "items": [
+        {
+          "title": "Automation",
+          "features": [
+            {
+              "title": "Workflows (Classic)",
+              "status": "Complated",
+              "color": "success"
+            },
+            {
+              "title": "Power Automate Flows",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Business Process Flows",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Custom APIs",
+              "status": "Complated",
+              "color": "success"
+            },
+            {
+              "title": "Actions",
+              "status": "Complated",
+              "color": "success"
+            },
+            {
+              "title": "Plug-ins (Sync/Async)",
+              "status": "Complated",
+              "color": "success"
+            },
+            {
+              "title": "Real-Time Plugins",
+              "status": "Complated",
+              "color": "success"
+            },
+            {
+              "title": "Virtual Tables",
+              "status": "In progress",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "title": "Extensibility",
+          "features": [
+            {
+              "title": "JavaScript Web Resources",
+              "status": "Complated",
+              "color": "success"
+            },
+            {
+              "title": "TypeScript",
+              "status": "Complated",
+              "color": "success"
+            },
+            {
+              "title": "HTML Web Resources",
+              "status": "Complated",
+              "color": "success"
+            },
+            {
+              "title": "PCF Components",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Power Pages",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Azure Functions",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Webhooks",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Event Framework",
+              "status": "Complated",
+              "color": "success"
+            }
+          ]
+        },
+        {
+          "title": "App Types",
+          "features": [
+            {
+              "title": "Model-Driven Apps",
+              "status": "Complated",
+              "color": "success"
+            },
+            {
+              "title": "Portal Apps",
+              "status": "In progress",
+              "color": "primary"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "category": "Security & Access",
+      "description": "Handles all security models including roles, field-level security, hierarchical access, business units, auditing, and environment-level compliance settings to protect organizational data.",
+      "items": [
+        {
+          "title": "Security",
+          "features": [
+            {
+              "title": "Security Roles",
+              "status": "Complated",
+              "color": "success"
+            },
+            {
+              "title": "Field-Level Security",
+              "status": "Complated",
+              "color": "success"
+            },
+            {
+              "title": "Record-Level Security",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Hierarchy Security",
+              "status": "In progress",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "title": "Teams & Business Units",
+          "features": [
+            {
+              "title": "Business Units",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Owner Teams",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Access Teams",
+              "status": "In progress",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "title": "Auditing & Compliance",
+          "features": [
+            {
+              "title": "Field Audit",
+              "status": "Complated",
+              "color": "success"
+            },
+            {
+              "title": "User Access Logs",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Environment Security",
+              "status": "In progress",
+              "color": "primary"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "category": "Integration & Developer Tools",
+      "description": "Includes all integration capabilities and developer tools such as APIs, webhooks, Azure services, XrmToolBox, DevOps pipelines, plugin registration, and solution management utilities.",
+      "items": [
+        {
+          "title": "APIs",
+          "features": [
+            {
+              "title": "Dataverse Web API",
+              "status": "Complated",
+              "color": "success"
+            },
+            {
+              "title": "Organization Service",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Discovery Service",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Custom API",
+              "status": "Complated",
+              "color": "success"
+            },
+            {
+              "title": "Batch Requests",
+              "status": "In progress",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "title": "Integration",
+          "features": [
+            {
+              "title": "Azure Service Bus",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Azure Functions",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Logic Apps",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "SharePoint",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Teams",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Exchange",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Outlook Add-in",
+              "status": "In progress",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "title": "Developer Tools",
+          "features": [
+            {
+              "title": "Plugin Registration Tool",
+              "status": "Complated",
+              "color": "success"
+            },
+            {
+              "title": "XrmToolBox",
+              "status": "Complated",
+              "color": "success"
+            },
+            {
+              "title": "Solution Packager",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Package Deployer",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Configuration Migration Tool",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Azure DevOps Pipelines",
+              "status": "In progress",
+              "color": "primary"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "category": "Power Pages / Portals",
+      "description": "Provides portal and website-building capabilities with authentication, web roles, permissions, liquid templates, forms, lists, and API integrations to expose Dataverse data externally.",
+      "items": [
+        {
+          "title": "Portal Types",
+          "features": [
+            {
+              "title": "Customer Self-Service",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Partner Portal",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Community Portal",
+              "status": "In progress",
+              "color": "primary"
+            }
+          ]
+        },
+        {
+          "title": "Portal Features",
+          "features": [
+            {
+              "title": "Authentication (Azure AD, Local, OAuth)",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Web Roles",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Page Permissions",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Form Components",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "List Components",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Liquid Templates",
+              "status": "In progress",
+              "color": "primary"
+            },
+            {
+              "title": "Portal Web API",
+              "status": "In progress",
+              "color": "primary"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
