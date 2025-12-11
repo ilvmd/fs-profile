@@ -5,7 +5,7 @@
   "phone": "+201011935168",
   "email": "fahdmohammed978@gmail.com",
   "job": "Microsoft Dynamic365 CRM Developer | Microsoft Power Platform Developer | Microsoft Certified @about the solution | PHP (Laravel) | NodeJs (ExpressJs) developer",
-  "company": "Advancya",
+  "company": "Advancya Technologies",
   "jobs": [
     "CRM Dynamic365 developer @ AboutTheSolution",
     "PHP Laravel developer",
@@ -210,6 +210,7 @@
       "percent": "80",
       "title": "Online Learning",
       "members": [
+        "Fahd Mohamed",
         "Nada Mostafa",
         "Omina Mohammed",
         "Fares Mohammed",
@@ -386,118 +387,130 @@
   ],
   "courses": [
     {
-      "title": "PHP (Oop | Basic)",
-      "source": "ElZero Web School",
-      "url": "https://www.youtube.com/playlist?list=PLDoPjvoNmBAxXTPncg0W4lhVS32LO_xtQ",
-      "description": ""
+      "title": "Power Pages 30 Days Learning Challenge",
+      "source": "by Arpit Tech Show",
+      "url": "https://www.youtube.com/playlist?list=PLwhleHnDZ_IYbiEozW42YFlSfj8bBaKLs",
+      "description": "N/A"
     },
     {
-      "title": "PHP OOP",
-      "source": "Dani Krossing",
-      "url": "",
-      "description": ""
+      "title": "Dynamics CRM 365 Videos",
+      "source": "dotNetLittleBoy",
+      "url": "https://www.youtube.com/playlist?list=PLJXMFihzhj53rwha4h7smb7nW-oSFWzfL",
+      "description": "N/A"
     },
     {
       "title": "PHP Laravel Framework",
       "source": "Professional Code",
       "url": "https://www.youtube.com/playlist?list=PLCm7ZeRfGSP4NNEikwx3wUAskQHB3p-LK",
-      "description": ""
+      "description": "N/A"
     },
     {
       "title": "PHP Invoice System",
       "source": "Mora Soft",
       "url": "https://www.youtube.com/playlist?list=PLftLUHfDSiZ7pKXkpGCoZATm5rF6msj5A",
-      "description": ""
+      "description": "N/A"
+    },
+    {
+      "title": "PHP (Oop | Basic)",
+      "source": "ElZero Web School",
+      "url": "https://www.youtube.com/playlist?list=PLDoPjvoNmBAxXTPncg0W4lhVS32LO_xtQ",
+      "description": "N/A"
+    },
+    {
+      "title": "PHP OOP",
+      "source": "Dani Krossing",
+      "url": "",
+      "description": "N/A"
     },
     {
       "title": "MySql",
       "source": "Elzero Web School",
       "url": "https://www.youtube.com/playlist?list=PLDoPjvoNmBAz6DT8SzQ1CODJTH-NIA7R9",
-      "description": ""
+      "description": "N/A"
     },
     {
       "title": "Gituhub - Git",
       "source": "Elzero Web School",
       "url": "https://www.youtube.com/playlist?list=PLDoPjvoNmBAw4eOj58MZPakHjaO3frVMF",
-      "description": ""
+      "description": "N/A"
     },
     {
       "title": "mmerce Web Develope",
       "source": "Elzero Web School",
       "url": "https://www.youtube.com/playlist?list=PLDoPjvoNmBAxdiBh6J62wOzEnvC4CNuFU",
-      "description": ""
+      "description": "N/A"
     },
     {
       "title": "MongoDB",
       "source": "Bogdan Stashchuk",
       "url": "https://www.youtube.com/playlist?list=PLWkguCWKqN9OwcbdYm4nUIXnA2IoXX0LI",
-      "description": ""
+      "description": "N/A"
     },
     {
       "title": "Node.js Tutorial for Beginners: Learn Node in 1 Hour",
       "source": "Programing with Mosh",
       "url": "https://www.youtube.com/watch?v=TlB_eWDSMt4",
-      "description": ""
+      "description": "N/A"
     },
     {
       "title": "How to build a REST API with Node js & Express",
       "source": "Programing with Mosh",
       "url": "https://www.youtube.com/watch?v=pKd0Rpw7O48",
-      "description": ""
+      "description": "N/A"
     },
     {
       "title": "Object-oriented Programming in JavaScript: Made Super Simple | Mosh",
       "source": "Programing with Mosh",
       "url": "https://www.youtube.com/watch?v=PFmuCDHHpwk",
-      "description": ""
+      "description": "N/A"
     },
     {
       "title": "Realtime Chat With Users & Rooms - Socket.io, Node & Express",
       "source": "Traversy Media",
       "url": "https://www.youtube.com/watch?v=jD7FnbI76Hg",
-      "description": ""
+      "description": "N/A"
     },
     {
       "title": "Chat Application using PHP with MySQL & JavaScript",
       "source": "CodingNepal",
       "url": "https://www.youtube.com/watch?v=VnvzxGWiK54",
-      "description": ""
+      "description": "N/A"
     },
     {
       "title": "1- باستخدام كاملة دورة Node.js and MongoDB ( مقدمة,(",
       "source": "Abdulaziz Alzaabi",
-      "url": "https://www.youtube.com/watch?v=0nWiSDc64ms&list=PLXgJ7cArk9uR_xxd3iZIwTg0mKUDYsxoi",
-      "description": ""
+      "url": "https://www.youtube.com/playlist?list=PLXgJ7cArk9uR_xxd3iZIwTg0mKUDYsxoi",
+      "description": "N/A"
     },
     {
       "title": "مقدمة وإنشاء الملفات الرئيسية - 2 Livewire تعلم -01",
       "source": "Sami Mansour",
       "url": "https://www.youtube.com/playlist?list=PLvNu8E-aj20lJ1cWcMkjwaBYzx_NEVrjC",
-      "description": ""
+      "description": "N/A"
     },
     {
       "title": "البحث تصفية النتائج باستخدام الالرافل",
       "source": "Sami Mansour",
       "url": "https://www.youtube.com/playlist?list=PLvNu8E-aj20m3kkcpy3damL2H8OQDTwMW",
-      "description": ""
+      "description": "N/A"
     },
     {
       "title": "Laravel Livewire 3 course",
       "source": "yelocode",
       "url": "https://www.youtube.com/playlist?list=PLqDySLfPKRn543NM_fTrJRdhjBgsogzSC",
-      "description": ""
+      "description": "N/A"
     },
     {
       "title": "Laravel نظام الفواتير باستخدام",
       "source": "Sami Mansour",
       "url": "https://www.youtube.com/playlist?list=PLvNu8E-aj20kgZmD9JfW8mhutH8lgafvc&pp=iAQB",
-      "description": ""
+      "description": "N/A"
     }
   ],
   "works": [
     {
       "image": "/fs-profile/assets/img/adv.jpg",
-      "title": "Mid-Level CRM D365 developer at Advancya",
+      "title": "Mid-Level CRM D365 developer at Advancya Technologies",
       "startData": "Oct 2025",
       "endDate": "Current",
       "locationType": "Remote"

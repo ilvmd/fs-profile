@@ -1,0 +1,123 @@
+<!-- Page Header -->
+<div class="page-header">
+    <div class="row align-items-end">
+        <div class="col-sm">
+            <h1 class="page-header-title">{{feature.category}}</h1>
+            <p class="fs-6 fw-bold">{{feature.description}}</p>
+        </div>
+        <!-- End Col -->
+    </div>
+    <!-- End Row -->
+</div>
+<!-- End Page Header -->
+
+<div class="row mx-auto" style="width: 77%;">
+    <div class="col-md-6">
+        <!-- Card -->
+        <div class="card mb-3 mb-lg-5 position-sticky" style="top: 70px;">
+            <!-- Body -->
+            <div class="card-body">
+                <div class="d-flex align-items-md-center">
+                    <div class="flex-shrink-0">
+                        <span class="display-3 text-dark">{{inprgressFeatures.length}}</span>
+                    </div>
+
+                    <div class="flex-grow-1 ms-3">
+                        <div class="row mx-md-n3">
+                            <div class="col-md px-md-4">
+                                <span class="d-block">In prgress Features</span>
+                            </div>
+                            <!-- End Col -->
+                        </div>
+                        <!-- End Row -->
+                    </div>
+                </div>
+            </div>
+            <!-- End Body -->
+        </div>
+        <!-- End Card -->
+    </div>
+    <div class="col-md-6">
+        <!-- Card -->
+        <div class="card mb-3 mb-lg-5 position-sticky" style="top: 70px;">
+            <!-- Body -->
+            <div class="card-body">
+                <div class="d-flex align-items-md-center">
+                    <div class="flex-shrink-0">
+                        <span class="display-3 text-dark">{{complatedFeatures.length}}</span>
+                    </div>
+
+                    <div class="flex-grow-1 ms-3">
+                        <div class="row mx-md-n3">
+                            <div class="col-md px-md-4">
+                                <span class="d-block">Complated Features</span>
+                            </div>
+                            <!-- End Col -->
+                        </div>
+                        <!-- End Row -->
+                    </div>
+                </div>
+            </div>
+            <!-- End Body -->
+        </div>
+    </div>
+</div>
+
+<div class="row justify-content-lg-center">
+    <div class="col-lg-9">
+        <!-- Step -->
+        <ul class="step">
+
+            <!-- Step Item -->
+            <li ng-repeat="item in feature.items track by $index" class="step-item">
+                <div class="step-content-wrapper">
+                    <span class="step-icon step-icon-soft-dark bi-dot fs-2"></span>
+
+                    <div class="step-content">
+                        <h5 class="mb-1">{{item.title}}</h5>
+
+                        <!-- <p class="fs-5 mb-1">
+                            Uploaded weekly reports to the task
+                            <a class="text-uppercase" href="#">
+                                <i class="bi-journal-bookmark-fill"></i>
+                                Fd-7
+                            </a>
+                        </p> -->
+
+                        <ul class="list-group list-group-sm">
+                            <!-- List Item -->
+                            <li class="list-group-item list-group-item-light">
+                                <div class="row gx-1">
+                                    <div class="col-sm-4 my-2" ng-repeat="feature in item.features track by $index">
+                                        <!-- Media -->
+                                        <div class="d-flex">
+                                            <div class="flex-shrink-0">
+                                                <span class="bi-check2 me-2 ms-2">
+                                            </div>
+                                            <div class="flex-grow-1 text-truncate ms-2 d-flex">
+                                                <span class="d-block fs-6 text-dark text-truncate"
+                                                    title="{{feature.title}}">{{feature.title}}</span>
+                                                <span
+                                                    class="badge bg-soft-{{feature.color}} text-{{feature.color}} rounded-pill ms-3">
+                                                    <span class="legend-indicator bg-{{feature.color}}"></span>
+                                                    "{{feature.status}}"
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <!-- End Media -->
+                                    </div>
+                                    <!-- End Col -->
+                                </div>
+                                <!-- End Row -->
+                            </li>
+                            <!-- End List Item -->
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <!-- End Step Item -->
+        </ul>
+        <!-- End Step -->
+    </div>
+</div>
+<!-- End Row -->
