@@ -1,5 +1,6 @@
-app.controller("ComingSoonCtrl", function ($scope, $http, $routeParams, $sce) {
-    $http.get("./components/" + $routeParams.name + ".md")
+app.controller("CustomizationsCtrl", function ($scope, $http, $routeParams, $sce) {
+    $scope.title = $routeParams.name;
+    $http.get("./components/customizations/" + $routeParams.name + ".md")
         .then(function (response) {
 
             $scope.codes = response.data.split(/(@Split|@split)/g).filter(Boolean);

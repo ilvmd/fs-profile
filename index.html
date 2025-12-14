@@ -207,16 +207,23 @@
                         <div id="navbarVerticalMenuPagesMenu">
                             <!-- Collapse -->
                             <div class="nav-item">
-
-                                <a class="nav-link dropdown-toggle active"
+                                <a ng-class="{
+                                        'active': isActive('/') || isActive('/projects') || isActive('/courses')
+                                    }"
+                                    class="nav-link dropdown-toggle"
                                     href="#navbarVerticalMenuPagesUserProfileMenu" role="button"
-                                    data-bs-toggle="collapse" data-bs-target="#navbarVerticalMenuPagesUserProfileMenu"
-                                    aria-expanded="true" aria-controls="navbarVerticalMenuPagesUserProfileMenu">
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#navbarVerticalMenuPagesUserProfileMenu"
+                                    ng-attr-aria-expanded="{{ isActive('/') || isActive('/projects') || isActive('/courses') }}"
+                                    aria-controls="navbarVerticalMenuPagesUserProfileMenu">
                                     <i class="bi bi-info-circle  nav-icon"></i>
                                     <span class="nav-link-title">Information</span>
                                 </a>
 
-                                <div id="navbarVerticalMenuPagesUserProfileMenu" class="nav-collapse collapse show"
+                                <div id="navbarVerticalMenuPagesUserProfileMenu" class="nav-collapse collapse"
+                                    ng-class="{
+                                        'show': isActive('/') || isActive('/projects') || isActive('/courses')
+                                    }"
                                     data-bs-parent="#navbarVerticalMenuPagesMenu">
                                     <a class="nav-link" ng-class="{ 'active': isActive('/') }" href="#!/">Profile</a>
                                     <a class="nav-link fs-6" ng-class="{ 'active': isActive('/projects') }"
@@ -230,37 +237,26 @@
                         </div>
                         <!-- End Collapse -->
 
-
-                        <!-- <div id="navbarVerticalMenuPagesMenu">
-                            <div class="nav-item">
-                                <a class="nav-link dropdown-toggle active" href="#navbarVerticalMenuPagesModulesMenu"
-                                    role="button" data-bs-toggle="collapse"
-                                    data-bs-target="#navbarVerticalMenuPagesModulesMenu" aria-expanded="true"
-                                    aria-controls="navbarVerticalMenuPagesModulesMenu">
-                                    <i class="bi-box-seam-fill nav-icon"></i>
-                                    <span class="nav-link-title">Modules</span>
-                                </a>
-                                <div id="navbarVerticalMenuPagesModulesMenu" class="nav-collapse collapse show"
-                                    data-bs-parent="#navbarVerticalMenuPagesMenu">
-                                    <a class="nav-link fs-6" ng-class="{ 'active': isActive('/customerservice') }" href="#!/customerservice">Customer Service</a>
-                                    <a class="nav-link fs-6" ng-class="{ 'active': isActive('/fieldservice') }" href="#!/fieldservice">Field Service</a>
-                                </div>
-                            </div>
-                        </div> -->
-                        <!-- End Collapse -->
-
                         <div id="navbarVerticalMenuPagesMenu">
                             <!-- Collapse -->
-                            <div class="nav-item">
-                                <a class="nav-link dropdown-toggle" href="#navbarVerticalMenuPagesFeaturesMenu"
-                                    role="button" data-bs-toggle="collapse"
-                                    data-bs-target="#navbarVerticalMenuPagesFeaturesMenu" aria-expanded="false"
+                            <div class="nav-item" >
+                                <a ng-class="{
+                                        'active': isActive('/features/1') || isActive('/features/2') || isActive('/features/3') || isActive('/features/4') || isActive('/features/5')
+                                    }"
+                                    class="nav-link dropdown-toggle"
+                                    href="#navbarVerticalMenuPagesFeaturesMenu" role="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#navbarVerticalMenuPagesFeaturesMenu"
+                                    ng-attr-aria-expanded="{{ isActive('/features/1') || isActive('/features/2') || isActive('/features/3') || isActive('/features/4') || isActive('/features/5') }}"
                                     aria-controls="navbarVerticalMenuPagesFeaturesMenu">
                                     <i class="bi-braces nav-icon"></i>
                                     <span class="nav-link-title">Features</span>
                                 </a>
 
                                 <div id="navbarVerticalMenuPagesFeaturesMenu" class="nav-collapse collapse"
+                                    ng-class="{
+                                        'show': isActive('/features/1') || isActive('/features/2') || isActive('/features/3') || isActive('/features/4') || isActive('/features/5')
+                                    }"
                                     data-bs-parent="#navbarVerticalMenuPagesMenu">
                                     <a class="nav-link fs-6" ng-class="{ 'active': isActive('/features/1') }"
                                         href="#!/features/1">Core CRM Platform</a>
@@ -282,20 +278,28 @@
                         <div id="navbarVerticalMenuPagesMenu">
                             <!-- Collapse -->
                             <div class="nav-item">
-                                <a class="nav-link dropdown-toggle" href="#navbarVerticalMenuPagesCustomizationMenu"
+                                <a ng-class="{
+                                        'active': isActive('/customizations/xQuery') || isActive('/customizations/xCommon')
+                                    }"
+                                    class="nav-link dropdown-toggle"
+                                    href="#navbarVerticalMenuPagesCustomizationMenu"
                                     role="button" data-bs-toggle="collapse"
-                                    data-bs-target="#navbarVerticalMenuPagesCustomizationMenu" aria-expanded="false"
+                                    data-bs-target="#navbarVerticalMenuPagesCustomizationMenu"
+                                    ng-attr-aria-expanded="{{ isActive('/customizations/xQuery') || isActive('/customizations/xCommon') }}"
                                     aria-controls="navbarVerticalMenuPagesCustomizationMenu">
                                     <i class="bi-braces nav-icon"></i>
                                     <span class="nav-link-title">Customization</span>
                                 </a>
 
                                 <div id="navbarVerticalMenuPagesCustomizationMenu" class="nav-collapse collapse"
+                                    ng-class="{
+                                        'show': isActive('/customizations/xQuery') || isActive('/customizations/xCommon')
+                                    }"
                                     data-bs-parent="#navbarVerticalMenuPagesMenu">
-                                    <a class="nav-link fs-6" ng-class="{ 'active': isActive('/comingsoon/xQuery') }"
-                                        href="#!/comingsoon/xQuery">Xrm.xQuery lib</a>
-                                    <a class="nav-link fs-6" ng-class="{ 'active': isActive('/comingsoon/xCommon') }"
-                                        href="#!/comingsoon/xCommon">XCommon lib</a>
+                                    <a class="nav-link fs-6" ng-class="{ 'active': isActive('/customizations/xQuery') }"
+                                        href="#!/customizations/xQuery">Xrm.xQuery lib</a>
+                                    <a class="nav-link fs-6" ng-class="{ 'active': isActive('/customizations/xCommon') }"
+                                        href="#!/customizations/xCommon">XCommon lib</a>
                                 </div>
                             </div>
                             <!-- End Collapse -->
@@ -334,6 +338,11 @@
             $scope.isActive = function (route) {
                 return $location.$$path == route;
             };
+
+            $scope.isCollapse = function (route) {
+                return $location.$$path == route;
+            };
+
             $http.get("profile.json")
                 .then(function (response) {
                     Object.assign($scope, response.data);
@@ -375,9 +384,9 @@
                     templateUrl: "components/features/feature.html",
                     controller: "FeatureCtrl"
                 })
-                .when("/comingsoon/:name", {
-                    templateUrl: "components/comingsoon.html",
-                    controller: "ComingSoonCtrl"
+                .when("/customizations/:name", {
+                    templateUrl: "components/customizations/customizations.html",
+                    controller: "CustomizationsCtrl"
                 })
 
                 .otherwise({ redirectTo: "/" });
@@ -404,7 +413,7 @@
     <script src="components/services/customerservice.js"></script>
     <script src="components/services/fieldservice.js"></script>
     <script src="components/features/feature.js"></script>
-    <script src="components/comingsoon.js"></script>
+    <script src="components/customizations/customizations.js"></script>
     <!-- End Style Switcher JS -->
 
     <!-- JS Plugins Init. -->
