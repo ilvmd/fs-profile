@@ -1,126 +1,211 @@
-<!-- Card -->
-<div class="card mb-3 mb-lg-5">
-    <!-- Body -->
-    <div class="card-body">
-        <div class="d-flex align-items-md-center">
-            <div class="flex-shrink-0">
-                <span class="display-3 text-dark">{{projects.length}}</span>
-            </div>
+<h1 class="mb-4">My Projects</h1>
 
-            <div class="flex-grow-1 ms-3">
-                <div class="row mx-md-n3">
-                    <div class="col-md px-md-4">
-                        <span class="d-block">Total projects</span>
+<!-- Nav tabs -->
+<ul class="nav nav-tabs mb-4" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+        <button
+            class="px-4 py-2 nav-link active"
+            id="home-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#home"
+            type="button"
+            role="tab"
+            aria-controls="home"
+            aria-selected="true"
+        >
+            Website Apps
+        </button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button
+            class="px-4 py-2 nav-link"
+            id="profile-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#profile"
+            type="button"
+            role="tab"
+            aria-controls="profile"
+            aria-selected="false"
+        >
+            CRM Apps
+        </button>
+    </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+    <div
+        class="tab-pane active"
+        id="home"
+        role="tabpanel"
+        aria-labelledby="home-tab"
+    >
+        <!-- Card -->
+        <div class="card mb-3 mb-lg-5">
+            <!-- Body -->
+            <div class="card-body">
+                <div class="d-flex align-items-md-center">
+                    <div class="flex-shrink-0">
+                        <span class="display-3 text-dark">{{projects.length}}</span>
                     </div>
-                    <!-- End Col -->
 
-                    <div class="col-md-9 col-lg-10 column-md-divider px-md-4">
-                        <div class="row justify-content-start mb-2">
-                            <div class="col-auto">
-                                <span class="legend-indicator bg-primary"></span>
-                                In progress ({{InprogressCount}})
+                    <div class="flex-grow-1 ms-3">
+                        <div class="row mx-md-n3">
+                            <div class="col-md px-md-4">
+                                <span class="d-block">Total projects</span>
                             </div>
                             <!-- End Col -->
 
-                            <div class="col-auto">
-                                <span class="legend-indicator bg-success"></span>
-                                Completed ({{CompletedCount}})
+                            <div class="col-md-9 col-lg-10 column-md-divider px-md-4">
+                                <div class="row justify-content-start mb-2">
+                                    <div class="col-auto">
+                                        <span class="legend-indicator bg-primary"></span>
+                                        In progress ({{InprogressCount}})
+                                    </div>
+                                    <!-- End Col -->
+
+                                    <div class="col-auto">
+                                        <span class="legend-indicator bg-success"></span>
+                                        Completed ({{CompletedCount}})
+                                    </div>
+                                    <!-- End Col -->
+                                </div>
+                                <!-- End Row -->
+
+                                <!-- Progress -->
+                                <!-- <div class="progress rounded-pill">
+                                    <div class="progress-bar" role="progressbar" ng-style="{
+                                        width: '{{InprogressPercent}}%'
+                                    }" aria-valuenow="{{InprogressPercent}}"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar bg-success" role="progressbar" ng-style="{
+                                        width: '{{CompletedPercent}}%'
+                                    }"
+                                        aria-valuenow="{{CompletedPercent}}" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div> -->
+                                <!-- End Progress -->
                             </div>
                             <!-- End Col -->
                         </div>
                         <!-- End Row -->
-
-                        <!-- Progress -->
-                        <!-- <div class="progress rounded-pill">
-                            <div class="progress-bar" role="progressbar" ng-style="{
-                                width: '{{InprogressPercent}}%'
-                            }" aria-valuenow="{{InprogressPercent}}"
-                                aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar bg-success" role="progressbar" ng-style="{
-                                width: '{{CompletedPercent}}%'
-                            }"
-                                aria-valuenow="{{CompletedPercent}}" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div> -->
-                        <!-- End Progress -->
                     </div>
-                    <!-- End Col -->
                 </div>
-                <!-- End Row -->
             </div>
+            <!-- End Body -->
         </div>
-    </div>
-    <!-- End Body -->
-</div>
-<!-- End Card -->
+        <!-- End Card -->
+        <!-- Card -->
+        <div class="card">
+            <!-- Table -->
+            <div class="table-responsive datatable-custom">
+                <table id="datatable"
+                    class="table table-lg table-borderless table-thead-bordered table-nowrap table-align-middle card-table">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>Project</th>
+                            <th>Members</th>
+                            <th>Status</th>
+                            <th>Progress</th>
+                            <th>Client</th>
+                            <th>Link</th>
+                        </tr>
+                    </thead>
 
-<!-- Card -->
-<div class="card">
-    <!-- Table -->
-    <div class="table-responsive datatable-custom">
-        <table id="datatable"
-            class="table table-lg table-borderless table-thead-bordered table-nowrap table-align-middle card-table">
-            <thead class="thead-light">
-                <tr>
-                    <th>Project</th>
-                    <th>Members</th>
-                    <th>Status</th>
-                    <th>Progress</th>
-                    <th>Client</th>
-                    <th>Link</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr ng-repeat="project in projects track by $index">
-                    <td class="table-column-ps-0">
-                        <a class="d-flex align-items-center px-3" href="#!/project/{{project.id}}">
-                            <img class="avatar" class="ms-2" src="{{project.image}}" alt="Image Description">
-                            <div class="ms-3">
-                                <span class="d-block h5 text-inherit mb-0">{{project.title}}</span>
-                                <span class="d-block fs-6 text-body">{{project.client}}</span>
-                            </div>
-                        </a>
-                    </td>
-                    <td>
-                        <!-- Avatar Group -->
-                        <div class="avatar-group avatar-group-xs avatar-circle">
-                            <span ng-repeat="member in project.members track by $index" class="avatar avatar-soft-dark" data-bs-toggle="tooltip"
-                                data-bs-placement="top" title="{{member}}">
-                                <span class="avatar-initials">{{member[0]}}</span>
-                            </span>
-                        </div>
-                        <!-- End Avatar Group -->
-                    </td>
-                    <td>
-                        <span class="legend-indicator" ng-class="{
-                            'bg-warning': project.level == 'Pending',
-                            'bg-success': project.level == 'Completed'
-                        }"></span>{{project.level}}
-                    </td>
-                    <td>
-                        <div class="d-flex align-items-center">
-                            <span class="fs-6 me-2">{{project.percent}}%</span>
-                            <div class="progress table-progress">
-                                <div class="progress-bar bg-primary" role="progressbar" ng-style="{
-                                    width: '{{project.percent}}%'
-                                }" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </td>
-                    <td>
-                        <span class="text-body">
-                            <i class="bi-person"></i> {{project.client}}
-                        </span>
-                    </td>
-                    <td>
-                        <a class="text-body" href="{{project.link}}">
-                            <i class="bi-chat-left-dots"></i> {{project.link}}
-                        </a>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+                    <tbody>
+                        <tr ng-repeat="project in projects track by $index">
+                            <td class="table-column-ps-0">
+                                <a class="d-flex align-items-center px-3" href="#!/project/{{project.id}}">
+                                    <img class="avatar" class="ms-2" src="{{project.image}}" alt="Image Description">
+                                    <div class="ms-3">
+                                        <span class="d-block h5 text-inherit mb-0">{{project.title}}</span>
+                                        <span class="d-block fs-6 text-body">{{project.client}}</span>
+                                    </div>
+                                </a>
+                            </td>
+                            <td>
+                                <!-- Avatar Group -->
+                                <div class="avatar-group avatar-group-xs avatar-circle">
+                                    <span ng-repeat="member in project.members track by $index" class="avatar avatar-soft-dark" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="{{member}}">
+                                        <span class="avatar-initials">{{member[0]}}</span>
+                                    </span>
+                                </div>
+                                <!-- End Avatar Group -->
+                            </td>
+                            <td>
+                                <span class="legend-indicator" ng-class="{
+                                    'bg-warning': project.level == 'Pending',
+                                    'bg-success': project.level == 'Completed'
+                                }"></span>{{project.level}}
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <span class="fs-6 me-2">{{project.percent}}%</span>
+                                    <div class="progress table-progress">
+                                        <div class="progress-bar bg-primary" role="progressbar" ng-style="{
+                                            width: '{{project.percent}}%'
+                                        }" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <span class="text-body">
+                                    <i class="bi-person"></i> {{project.client}}
+                                </span>
+                            </td>
+                            <td>
+                                <a ng-show="project.link" class="text-body" href="{{project.link}}">
+                                    <i class="bi-link-45deg"></i> <span>{{project.link}}</span>
+                                </a>
+                                <span ng-show="!project.link" class="fw-semibold fs-5">N/A</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- End Table -->
+        </div>
+        <!-- End Card -->
     </div>
-    <!-- End Table -->
+    <div
+        class="tab-pane"
+        id="profile"
+        role="tabpanel"
+        aria-labelledby="profile-tab"
+    >
+        <!-- Card -->
+        <div class="card">
+            <!-- Table -->
+            <div class="table-responsive datatable-custom">
+                <table id="datatable"
+                    class="table table-lg table-borderless table-thead-bordered table-nowrap table-align-middle card-table">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>Project</th>
+                            <th>Technology</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr ng-repeat="CRMProject in CRMProjects track by $index">
+                            <td class="table-column-ps-0">
+                                <a class="d-flex align-items-center px-3" href="javascript:void;">
+                                    <!-- <img class="avatar" class="ms-2" src="{{project.image}}" alt="Image Description"> -->
+                                    <div class="ms-3">
+                                        <span class="d-block h5 text-inherit mb-0">{{CRMProject.title}}</span>
+                                        <span class="d-block fs-6 text-body">{{CRMProject.client}}</span>
+                                    </div>
+                                </a>
+                            </td>
+                            <td>
+                                <span ng-show="!project.link" class="fw-semibold fs-5">{{CRMProject.technology}}</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- End Table -->
+        </div>
+        <!-- End Card -->
+    </div>
 </div>
-<!-- End Card -->

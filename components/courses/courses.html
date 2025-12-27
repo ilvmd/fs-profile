@@ -1,62 +1,114 @@
-<div class="row">
-    <div class="col-md-3">
-        <!-- Card -->
-        <div class="card mb-3 mb-lg-5 position-sticky" style="top: 70px;">
-            <!-- Body -->
-            <div class="card-body">
-                <div class="d-flex align-items-md-center">
-                    <div class="flex-shrink-0">
-                        <span class="display-3 text-dark">{{courses.length}}</span>
-                    </div>
+<style>
+    .fs-badge-primary {
+        background-color: #1366ff1a;
+        color: #377dff !important;
+        padding: 2px 11px !important;
+        font-size: 12px;
+        margin-inline-end: 10px;
+    }
+</style>
 
-                    <div class="flex-grow-1 ms-3">
-                        <div class="row mx-md-n3">
-                            <div class="col-md px-md-4">
-                                <span class="d-block">Total courses</span>
+<h1 class="mb-4">My Courses</h1>
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs mb-4" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation" ng-repeat="(flag, courses) in coursesGroup">
+        <button
+            class="px-4 py-2 nav-link"
+            ng-class="{
+                'active': $first
+            }"
+            id="{{flag}}-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#{{flag}}"
+            type="button"
+            role="tab"
+            aria-controls="{{flag}}"
+            aria-selected="true"
+        >
+            <span class="fs-badge-primary fw-semibold rounded-pill px-2 py-1">{{courses.length}}</span>
+            <span>{{flag}}</span>
+        </button>
+    </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+    <div ng-repeat="(flag, courses) in coursesGroup"
+        class="tab-pane"
+        ng-class="{
+            'active': $first
+        }"
+        id="{{flag}}"
+        role="tabpanel"
+        aria-labelledby="{{flag}}-tab"
+    >
+        <div class="row">
+            <div class="col-md-3">
+                <!-- Card -->
+                <div class="card mb-3 mb-lg-5 position-sticky" style="top: 70px;">
+                    <!-- Body -->
+                    <div class="card-body">
+                        <div class="d-flex align-items-md-center">
+                            <div class="flex-shrink-0">
+                                <span class="display-3 text-dark">{{courses.length}}</span>
                             </div>
-                            <!-- End Col -->
-                        </div>
-                        <!-- End Row -->
-                    </div>
-                </div>
-            </div>
-            <!-- End Body -->
-        </div>
-        <!-- End Card -->
-    </div>
-    <div class="col-md-9">
-        <!-- Card -->
-        <div class="card">
-            <!-- Table -->
-            <div class="table-responsive datatable-custom">
-                <table id="datatable"
-                    class="table table-lg table-borderless table-thead-bordered table-nowrap table-align-middle card-table">
-                    <thead class="thead-light">
-                        <tr>
-                            <th>Name</th>
-                            <th>Description</th>
-                        </tr>
-                    </thead>
-    
-                    <tbody>
-                        <tr ng-repeat="course in courses track by $index">
-                            <td class="table-column-ps-0">
-                                <div class="ms-3">
-                                    <a class="text-body" target="_blank" href="{{course.url}}">
-                                        <span class="d-block h5 text-inherit mb-0">{{course.title}}</span>
-                                        <span class="fs-6 me-2">{{course.source}}</span>
-                                    </a>
+
+                            <div class="flex-grow-1 ms-3">
+                                <div class="row mx-md-n3">
+                                    <div class="col-md px-md-4">
+                                        <span class="d-block">Total courses</span>
+                                        <h4 class="d-block">{{flag}}</h4>
+                                    </div>
+                                    <!-- End Col -->
                                 </div>
-                            </td>
-                            <td>
-                                <span class="fs-6 me-2">{{course.description}}</span>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                                <!-- End Row -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Body -->
+                </div>
+                <!-- End Card -->
             </div>
-            <!-- End Table -->
+            <div class="col-md-9">
+                <!-- Card -->
+                <div class="card">
+                    <!-- Table -->
+                    <div class="table-responsive datatable-custom">
+                        <table id="datatable"
+                            class="table table-lg table-borderless table-thead-bordered table-nowrap table-align-middle card-table">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th>#</th>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+            
+                            <tbody>
+                                <tr ng-repeat="course in courses track by $index">
+                                    <td>
+                                        <span class="fs-6 me-2">{{$index + 1}}</span>
+                                    </td>
+                                    <td class="table-column-ps-0">
+                                        <div class="ms-3">
+                                            <a class="text-body" target="_blank" href="{{course.url}}">
+                                                <span class="d-block h5 text-inherit mb-0">{{course.title}}</span>
+                                                <span class="fs-6 me-2">{{course.source}}</span>
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="fs-6 me-2">{{course.description}}</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- End Table -->
+                </div>
+                <!-- End Card -->
+            </div>
         </div>
-        <!-- End Card -->
     </div>
 </div>

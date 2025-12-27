@@ -8,7 +8,7 @@
 
     pre code.hljs {
         border-radius: 10px;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 600;
         white-space: pre-wrap;
     }
@@ -18,14 +18,46 @@
         display: flex;
         flex-direction: column;
     }
+
+    .js-clipboard-icon {
+        right: 8px;
+        top: 9px;
+        background: #3b414e;
+        padding: 5px 10px;
+        border-radius: 5px;
+        color: white;
+    }
+
+    .cpmd-container {
+        border: none !important;
+    }
+
+    .cpme-toolbar {
+        display: none;
+    }
+
+    .cpme-preview {
+        height: unset !important;
+        border: none !important;
+        padding: 0;
+    }
+
 </style>
 
-<h1 class="fs-1 text-center mb-4">My {{title}} library</h1>
+<!-- <h1 class="fs-1 text-center mb-4">My {{title}} library</h1> -->
 <div class="code">
-    <div ng-repeat="document in documents track by $index">
-        <div class="fw-bold mb-4" ng-bind-html="document.text"></div>
+    <div class="mardown-editor"></div>
+
+    <!-- <div ng-repeat="document in documents track by $index">
+        <div class="fw-bold mb-4" ng-bind-html="document.description"></div>
+
         <pre ng-show="document.code != ''">
             <code class="language-js" highlight-code ng-bind="document.code"></code>
+            <input id="code-{{$index}}" type="hidden" class="form-control" ng-value="document.code">
         </pre>
-    </div>
+
+        <pre ng-show="document.result != ''">
+            <code class="language-json" highlight-code ng-bind="document.result"></code>
+        </pre>
+    </div> -->
 </div>

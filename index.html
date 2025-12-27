@@ -1,3 +1,4 @@
+-- Active: 1766004019391@@127.0.0.1@1433
 <!DOCTYPE html>
 <html lang="en" ng-app="myApp">
 
@@ -25,7 +26,7 @@
     <link rel="preload" href="./assets/css/theme-dark.min.css" data-hs-appearance="dark" as="style">
 
     <link rel="stylesheet" href="./assets/css/atom-one-dark.min.css">
-
+    <link href="./assets/css/codeparl-bootstrap-markdown-editor.min.css" rel="stylesheet">
     <style data-hs-appearance-onload-styles>
         * {
             transition: unset !important;
@@ -326,6 +327,11 @@
 
     <!-- JS Front -->
     <script src="./assets/js/theme.min.js"></script>
+    <script src="./assets/js/clipboard.min.js"></script>
+    <script src="./assets/vendor/markdown/js/ace-builds/src-noconflict/ace.js"></script>
+    <script src="./assets/vendor/markdown/js/showdown.min.js"></script>
+    <script src="./assets/vendor/markdown/js/prism.js"></script>
+    <script src="./assets/js/codeparl-bootstrap-markdown-editor.js"></script>
 
     <script src="./assets/js/angular.min.js"></script>
     <script src="./assets/js/angular-route.min.js"></script>
@@ -402,7 +408,9 @@
                 }
             };
         });
+
     </script>
+
     <!-- Components -->
     <script src="components/home/home.js"></script>
     <script src="components/project/projects.js"></script>
@@ -438,7 +446,6 @@
                 // INITIALIZATION OF CLIPBOARD
                 // =======================================================
                 HSCore.components.HSClipboard.init('.js-clipboard')
-
 
                 // INITIALIZATION OF SORTABLEJS
                 // =======================================================

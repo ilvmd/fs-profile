@@ -9,17 +9,19 @@ Xrm
     .then(console.log)
     .catch(console.log)
     .finally()
-
-    [
-        {
-            "fs_name": "Fahd Moh...",
-            "statuscode": 1
-            "statecode": 1,
-            ... etc
-        },
-        ...etc
-    ]
 @endcode
+
+@result
+[
+    {
+        "fs_name": "Fahd Moh...",
+        "statuscode": 1
+        "statecode": 1,
+        ... etc
+    },
+    ...etc
+]
+@endresult
 
 
 @split
@@ -36,19 +38,22 @@ Xrm
     .then(console.log)
     .catch(console.log)
     .finally()
-
-    [
-        {
-            "fs_name": "Fahd Moh...",
-            "statuscode": 1
-            "statecode": 1
-        },
-        ...etc
-    ]
 @endcode
+
+@result
+[
+    {
+        "fs_name": "Fahd Moh...",
+        "statuscode": 1
+        "statecode": 1
+    },
+    ...etc
+]
+@endresult
 
 
 @split
+
 
 @text
 - Will return all <kbd>`Courses`</kbd> records with specific fields at condition object
@@ -158,15 +163,17 @@ Xrm
     .then(console.log)
     .catch(console.log)
     .finally()
-
-    [
-        {
-            "fs_name": "Fahd Moh...",
-            "statuscode": 1
-            "statecode": 1
-        }
-    ]
 @endcode
+
+@result
+[
+    {
+        "fs_name": "Fahd Moh...",
+        "statuscode": 1
+        "statecode": 1
+    }
+]
+@endresult
 
 
 @split

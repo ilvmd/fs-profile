@@ -385,126 +385,160 @@
       "images": []
     }
   ],
+  "CRMProject": [
+    {
+      "title": "CPA",
+      "technology": "AngularJS"
+    },
+    {
+      "title": "eFinance",
+      "technology": "CRM Dynamics365"
+    },
+    {
+      "title": "El-Araby Group",
+      "technology": "CRM Dynamics365 & Power Pages"
+    }
+  ],
   "courses": [
     {
       "title": "Power Pages 30 Days Learning Challenge",
       "source": "by Arpit Tech Show",
       "url": "https://www.youtube.com/playlist?list=PLwhleHnDZ_IYbiEozW42YFlSfj8bBaKLs",
-      "description": "N/A"
+      "description": "N/A",
+      "flag": "CRM"
     },
     {
       "title": "Dynamics CRM 365 Videos",
       "source": "dotNetLittleBoy",
       "url": "https://www.youtube.com/playlist?list=PLJXMFihzhj53rwha4h7smb7nW-oSFWzfL",
-      "description": "N/A"
+      "description": "N/A",
+      "flag": "CRM"
     },
     {
       "title": "PHP Laravel Framework",
       "source": "Professional Code",
       "url": "https://www.youtube.com/playlist?list=PLCm7ZeRfGSP4NNEikwx3wUAskQHB3p-LK",
-      "description": "N/A"
+      "description": "N/A",
+      "flag": "Backend"
     },
     {
       "title": "PHP Invoice System",
       "source": "Mora Soft",
       "url": "https://www.youtube.com/playlist?list=PLftLUHfDSiZ7pKXkpGCoZATm5rF6msj5A",
-      "description": "N/A"
+      "description": "N/A",
+      "flag": "Backend"
     },
     {
       "title": "PHP (Oop | Basic)",
       "source": "ElZero Web School",
       "url": "https://www.youtube.com/playlist?list=PLDoPjvoNmBAxXTPncg0W4lhVS32LO_xtQ",
-      "description": "N/A"
+      "description": "N/A",
+      "flag": "Backend"
     },
     {
       "title": "PHP OOP",
       "source": "Dani Krossing",
       "url": "",
-      "description": "N/A"
+      "description": "N/A",
+      "flag": "Backend"
     },
     {
       "title": "MySql",
       "source": "Elzero Web School",
       "url": "https://www.youtube.com/playlist?list=PLDoPjvoNmBAz6DT8SzQ1CODJTH-NIA7R9",
-      "description": "N/A"
+      "description": "N/A",
+      "flag": "Database"
     },
     {
       "title": "Gituhub - Git",
       "source": "Elzero Web School",
       "url": "https://www.youtube.com/playlist?list=PLDoPjvoNmBAw4eOj58MZPakHjaO3frVMF",
-      "description": "N/A"
+      "description": "N/A",
+      "flag": "Toots"
     },
     {
       "title": "Create eCommerce Shop With PHP, MySQL, jQuery, Bootstrap",
       "source": "Elzero Web School",
       "url": "https://www.youtube.com/playlist?list=PLDoPjvoNmBAxdiBh6J62wOzEnvC4CNuFU",
-      "description": "N/A"
+      "description": "N/A",
+      "flag": "Frontend"
     },
     {
       "title": "MongoDB",
       "source": "Bogdan Stashchuk",
       "url": "https://www.youtube.com/playlist?list=PLWkguCWKqN9OwcbdYm4nUIXnA2IoXX0LI",
-      "description": "N/A"
+      "description": "N/A",
+      "flag": "Database"
     },
     {
       "title": "Node.js Tutorial for Beginners: Learn Node in 1 Hour",
       "source": "Programing with Mosh",
       "url": "https://www.youtube.com/watch?v=TlB_eWDSMt4",
-      "description": "N/A"
+      "description": "N/A",
+      "flag": "Backend"
     },
     {
       "title": "How to build a REST API with Node js & Express",
       "source": "Programing with Mosh",
       "url": "https://www.youtube.com/watch?v=pKd0Rpw7O48",
-      "description": "N/A"
+      "description": "N/A",
+      "flag": "Backend"
     },
     {
       "title": "Object-oriented Programming in JavaScript: Made Super Simple | Mosh",
       "source": "Programing with Mosh",
       "url": "https://www.youtube.com/watch?v=PFmuCDHHpwk",
-      "description": "N/A"
+      "description": "N/A",
+      "flag": "Frontend"
     },
     {
       "title": "Realtime Chat With Users & Rooms - Socket.io, Node & Express",
       "source": "Traversy Media",
       "url": "https://www.youtube.com/watch?v=jD7FnbI76Hg",
-      "description": "N/A"
+      "description": "N/A",
+      "flag": "Backend"
     },
     {
       "title": "Chat Application using PHP with MySQL & JavaScript",
       "source": "CodingNepal",
       "url": "https://www.youtube.com/watch?v=VnvzxGWiK54",
-      "description": "N/A"
+      "description": "N/A",
+      "flag": "Backend"
     },
     {
       "title": "1- باستخدام كاملة دورة Node.js and MongoDB ( مقدمة,(",
       "source": "Abdulaziz Alzaabi",
       "url": "https://www.youtube.com/playlist?list=PLXgJ7cArk9uR_xxd3iZIwTg0mKUDYsxoi",
-      "description": "N/A"
+      "description": "N/A",
+      "flag": "Backend"
     },
     {
       "title": "مقدمة وإنشاء الملفات الرئيسية - 2 Livewire تعلم -01",
       "source": "Sami Mansour",
       "url": "https://www.youtube.com/playlist?list=PLvNu8E-aj20lJ1cWcMkjwaBYzx_NEVrjC",
-      "description": "N/A"
+      "description": "N/A",
+      "flag": "Backend"
     },
     {
       "title": "البحث تصفية النتائج باستخدام الالرافل",
       "source": "Sami Mansour",
       "url": "https://www.youtube.com/playlist?list=PLvNu8E-aj20m3kkcpy3damL2H8OQDTwMW",
-      "description": "N/A"
+      "description": "N/A",
+      "flag": "Backend"
     },
     {
       "title": "Laravel Livewire 3 course",
       "source": "yelocode",
       "url": "https://www.youtube.com/playlist?list=PLqDySLfPKRn543NM_fTrJRdhjBgsogzSC",
-      "description": "N/A"
+      "description": "N/A",
+      "flag": "Backend"
     },
     {
       "title": "Laravel نظام الفواتير باستخدام",
       "source": "Sami Mansour",
       "url": "https://www.youtube.com/playlist?list=PLvNu8E-aj20kgZmD9JfW8mhutH8lgafvc&pp=iAQB",
-      "description": "N/A"
+      "description": "N/A",
+      "flag": "Backend"
     }
   ],
   "works": [
