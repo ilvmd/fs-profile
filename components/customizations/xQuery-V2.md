@@ -128,7 +128,7 @@ Xrm
 ```js
 Xrm
     .xQuery('fs_course')
-    .Select(['fs_name', 'statuscode', 'statecode'])
+    .Select(['fs_name', 'fs_degree', 'statuscode', 'statecode'])
     .Filter({ field: 'fs_degree', op: Xrm.xUtility.Operator.Gt, value: 60 })
     .Get()
     .then(console.log)
@@ -142,7 +142,9 @@ Xrm
 [
     {
         "fs_name": "Fahd Moh...",
-        "fs_degree": 85
+        "fs_degree": 85,
+        "statuscode": 1,
+        "statecode": 1
     }
 ]
 ```
@@ -205,6 +207,7 @@ Xrm
         "Name": "Fahd Moh...",
         "Status": 1,
         "statecode": 1
+        // etc ...
     }
 ]
 ```
@@ -238,8 +241,7 @@ Xrm
         "statecode": 1,
         "Status": 1,
         "Teacher": {
-            "fs_name": "Fahd Moh...",
-            /* ... */
+            "fs_name": "Fahd Moh..."
         }
     }
 ]
@@ -268,7 +270,8 @@ Xrm
 {
     "Name": "Fahd Moh...",
     "Status": 1,
-    "statecode": 1
+    "statecode": 1,
+    // etc ...
 }
 ```
 
@@ -308,11 +311,22 @@ Xrm
 ```js
 Xrm
     .xCurrent()
+    // way 1
+    .Update({
+        "statecode": 1,
+        "statuscode": 2,
+        "fs_Teacher": {
+            EntityName: "fs_teachers"
+            RecordId: "3275cf76-9fea-ef11-be20-7c1e52fce0cd"
+        },
+    })
+    // way 2
     .Update({
         "statecode": 1,
         "statuscode": 2,
         "fs_Teacher@odata.bind": "/fs_teachers(3275cf76-9fea-ef11-be20-7c1e52fce0cd)"
     })
+
     .then(console.log)
     .catch(console.log)
     .finally()
@@ -335,6 +349,49 @@ Xrm
         "statuscode": 2,
         "fs_Teacher@odata.bind": "/fs_teachers(3275cf76-9fea-ef11-be20-7c1e52fce0cd)"
     })
+    .then(console.log)
+    .catch(console.log)
+    .finally()
+```
+
+
+---
+
+* Will create **a new record**.
+* Supports object of simple fields and lookup bindings.
+* create **a new record** and resolves with the create response.
+
+```js
+Xrm
+    .xQuery('fs_course')
+    .Create({
+        "statecode": "Portal",
+        "fs_Teacher@odata.bind": "/fs_teachers(3275cf76-9fea-ef11-be20-7c1e52fce0cd)"
+    })
+    .then(console.log)
+    .catch(console.log)
+    .finally()
+```
+
+---
+
+* Will create **a multi records**.
+* Supports array of objects of simple fields and lookup bindings.
+* create **a multi records** and resolves with the create response.
+
+```js
+Xrm
+    .xQuery('fs_course')
+    .Create([
+        {
+            "statecode": "Portal",
+            "fs_Teacher@odata.bind": "/fs_teachers(3275cf76-9fea-ef11-be20-7c1e52fce0cd)"
+        },
+        {
+            "fs_name": "CRM",
+            "fs_Teacher@odata.bind": "/fs_teachers(3275cf76-9fea-ef11-be20-7c1e52fce0cd)"
+        }
+    ])
     .then(console.log)
     .catch(console.log)
     .finally()
