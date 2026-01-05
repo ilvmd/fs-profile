@@ -73,6 +73,9 @@
                             <li class="pt-4 pb-0"><span class="card-subtitle">Contacts</span></li>
                             <li><i class="bi-at dropdown-item-icon"></i> <a href="mailto:{{email}}">{{email}}</a></li>
                             <li><i class="bi-phone dropdown-item-icon"></i> {{phone}}</li>
+                            <li>
+                                <button class="btn btn-sm btn-dark text-uppercase shadow-none" onclick="downloadFileFromUrl()">Download CV</button>
+                            </li>
                         </ul>
                     </div>
                     <!-- End Body -->
@@ -91,10 +94,7 @@
                                 <thead class="thead-light">
                                     <tr>
                                         <th>
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <span>Certificate</span>
-                                                <button class="btn btn-sm btn-dark text-uppercase shadow-none" onclick="downloadFileFromUrl()">Download CV</button>
-                                            </div>
+                                            <span>Certificate</span>
                                         </th>
                                     </tr>
                                 </thead>
