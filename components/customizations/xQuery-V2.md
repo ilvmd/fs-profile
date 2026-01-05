@@ -326,7 +326,6 @@ Xrm
         "statuscode": 2,
         "fs_Teacher@odata.bind": "/fs_teachers(3275cf76-9fea-ef11-be20-7c1e52fce0cd)"
     })
-
     .then(console.log)
     .catch(console.log)
     .finally()
